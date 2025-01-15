@@ -1,0 +1,34 @@
+.card-review {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+  border-radius: 8px;
+  padding: 32px;
+  box-shadow: 0 4px 10px 0 rgba(23, 28, 31, 0.23);
+  background: #fff;
+
+  text-align: left;
+
+  @media screen and (max-width: 319px) {
+    padding: 20px;
+  }
+}
+
+.card-review__rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.card-review__author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.card-review__author-img {
+  border-radius: 100%;
+  overflow: hidden;
+}

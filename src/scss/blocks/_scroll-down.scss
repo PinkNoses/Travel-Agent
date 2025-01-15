@@ -1,0 +1,43 @@
+.scroll-down {
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+
+  @media screen and (max-width: 490px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 374px) {
+    width: 60%;
+  }
+
+  @media screen and (max-width: 319px) {
+    width: 50%;
+  }
+}
+
+.scroll-down__text {
+  animation: rotation 10s linear 0s normal none infinite running;
+}
+
+.scroll-down__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: filter 0.6s ease-in;
+
+  &:hover {
+    filter: saturate(1.5);
+    cursor: pointer;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

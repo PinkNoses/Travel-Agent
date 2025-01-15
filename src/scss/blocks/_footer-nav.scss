@@ -1,0 +1,28 @@
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-nav__title {
+  font-size: 18px;
+  line-height: 150%;
+
+  @media screen and (max-width: 631px) {
+   font-size: 16px;
+  }
+}
+
+.footer-nav__list {
+  font-family: var(--font-second);
+  font-weight: normal;
+  font-size: 16px;
+
+  @media screen and (max-width: 631px) {
+    font-size: 14px;
+  }
+}
+
+.footer-nav__list li {
+  padding: 8px 0;
+}

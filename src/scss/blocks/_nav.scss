@@ -1,0 +1,50 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  a {
+    font-family: var(--font-second);
+    font-weight: normal;
+    color: var(--text-color);
+    transition: all 0.2s ease-in;
+  }
+
+  a:hover,
+  a.active {
+    color: var(--accent);
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.nav__btns {
+  display: flex;
+  gap: 12px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.nav__icon {
+  display: none;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+}

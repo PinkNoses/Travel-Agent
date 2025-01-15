@@ -1,0 +1,16 @@
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-button-disabled {
+  pointer-events: none;
+  svg path {
+    fill: #b9b9b9;
+  }
+
+  svg rect {
+    stroke: #b9b9b9;
+    fill: transparent;
+  }
+}

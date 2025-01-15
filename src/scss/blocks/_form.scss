@@ -1,0 +1,93 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto;
+  align-items: center;
+  gap: 16px;
+
+  border: 1px solid rgba(144, 144, 144, 0.3);
+  border-radius: 16px;
+  padding: 12px 16px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 500px;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+
+  
+  }
+}
+
+.form__label {
+  position: relative;
+  padding-left: 36px;
+
+  display: grid;
+  gap: 8px;
+
+  span {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+
+    position: absolute;
+    top: -2px;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+
+  &--map::before {
+    background-image: url("./../img/icons/map.svg");
+  }
+
+  &--date::before {
+    background-image: url("./../img/icons/calendar.svg");
+  }
+}
+
+.easepick-wrapper {
+  .container .time-plugin{
+    @media screen and (max-width: 374px) {
+      max-width: 80% !important;
+    }
+  }
+}
+
+.form__input {
+  font-size: 14px;
+
+  &::placeholder {
+    font-family: var(--font-second);
+    font-weight: normal;
+    color: var(--text-muted);
+  }
+}
+
+.form__devider {
+  height: 24px;
+  width: 2px;
+  background-color: var(--text-muted);
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.form__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+  padding: 12px;
+  background-color: var(--accent);
+  transition: opacity 0.2s ease-in;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

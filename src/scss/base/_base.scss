@@ -1,0 +1,138 @@
+html {
+  scroll-behavior: smooth;
+  background-color: var(--accent);
+}
+
+body {
+  background-color: var(--page-bg);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  font-weight: 500;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  display: block;
+}
+
+.wrap-padding {
+  padding: 60px 0;
+
+  @media screen and (max-width: 1023px) {
+    padding: 30px 0;
+  }
+
+  @media screen and (max-width: 424px) {
+    padding: 20px 0;
+  }
+}
+
+.title-1 {
+  font-weight: 700;
+  font-size: 72px;
+
+  @media screen and (max-width: 1023px) {
+    font-size: 52px;
+  }
+
+  @media screen and (max-width: 424px) {
+    font-size: 32px;
+  }
+}
+
+.title-2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  text-transform: capitalize;
+
+  
+
+  @media screen and (max-width: 767px) {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 424px) {
+    font-size: 24px;
+  }
+  
+}
+
+.title-3 {
+  font-weight: 500;
+  font-size: 36px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 28px;
+  }
+
+  @media screen and (max-width: 424px) {
+    font-size: 22px;
+  }
+}
+
+.title-4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 424px) {
+    font-size: 16px;
+  }
+}
+
+.title-5 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+
+  @media screen and (max-width: 424px) {
+    font-size: 14px;
+  }
+}
+
+.text {
+  font-family: "Circular Std Book", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--text-muted);
+
+  p + p {
+    margin-top: 1em;
+  }
+
+  @media screen and (max-width: 424px) {
+    font-size: 16px;
+  }
+}
+
+.text-small {
+  font-family: "Circular Std Book", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text-muted);
+
+  @media screen and (max-width: 424px) {
+    font-size: 14px;
+  }
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.muted {
+  color: var(--text-muted);
+}

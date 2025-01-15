@@ -1,0 +1,116 @@
+.discover__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  align-items: center;
+
+  @media screen and (max-width: 1023px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.discover__desc {
+  padding-top: 91px;
+  padding-bottom: 59px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 45px;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (max-width: 424px) {
+   
+    padding-bottom: 20px;
+  }
+}
+
+.discover__title {
+  margin-bottom: 24px;
+
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    width: 268px;
+    height: 24px;
+    background-image: url(./../img/discover/underline.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    z-index: -1;
+
+    @media screen and (max-width: 1023px) {
+      bottom: 0;
+    }
+
+    @media screen and (max-width: 424px) {
+      width: 134px;
+      height: 12px;
+    }
+  }
+}
+
+.discover__text {
+  margin-bottom: 40px;
+}
+
+.discover__picture {
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+  align-self: center;
+  justify-self: center;
+
+  @media screen and (max-width: 1023px) {
+    grid-row-start: -1;
+  }
+}
+
+.discover__picture-hint {
+  position: absolute;
+  top: 90px;
+  left: 40px;
+  z-index: 1;
+
+  @media screen and (max-width: 1199px) {
+    top: 40px;
+    left: 20px;
+  }
+
+  @media screen and (max-width: 374px) {
+    top: 10px;
+    left: 10px;
+  }
+}
+
+.discover__picture-scroll {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+
+  @media screen and (max-width: 1199px) {
+    bottom: 0px;
+    right: 0px;
+  }
+
+  @media screen and (max-width: 424px) {
+    right: -4%;
+  }
+
+  @media screen and (max-width: 374px) {
+    right: -15%;
+  }
+
+  @media screen and (max-width: 319px) {
+    right: -60px;
+  }
+}

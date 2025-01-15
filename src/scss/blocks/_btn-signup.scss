@@ -1,0 +1,21 @@
+.btn-signup {
+  padding: 8px 20px;
+  height: 40px;
+
+  border-radius: 8px;
+  border: 1px solid #b7b7b7;
+  background: #181818;
+
+  font-family: var(--font-second);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+
+  transition: opacity 0.2s ease-in;
+}
+
+.btn-signup:hover,
+.btn-signup:focus {
+  opacity: 0.5;
+}
