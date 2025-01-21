@@ -1,4 +1,4 @@
-<h1><i><a href = "https://pinknoses.github.io/Travel-Agent/"> Лэндинг</a> Travel Agent</i></h1>
+<h1><i><a href = "https://pinknoses.github.io/Travel-Agent/"> Верстка</a> лэндинга Travel Agent</i></h1>
 <ul>
    <li>Применение методологии БЭМ при написании классов;</li>
   <li>Использование препроцессора SASS, переменных;</li>
