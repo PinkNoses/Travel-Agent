@@ -12,10 +12,10 @@
   line-height: 150%;
   color: #454545;
 
-  transition: opacity 0.2s ease-in;
+  transition: border-color 0.3s ease-in;
 }
 
 .btn-login:hover,
 .btn-login:focus {
-  opacity: 0.5;
+  border-color: var(--accent);
 }

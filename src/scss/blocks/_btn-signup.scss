@@ -12,10 +12,11 @@
   line-height: 150%;
   color: #fff;
 
-  transition: opacity 0.2s ease-in;
+  transition: background-color, color 0.3s ease-in;
 }
 
 .btn-signup:hover,
 .btn-signup:focus {
-  opacity: 0.5;
+  background-color: var(--accent);
+  color: var(--text-color);
 }
